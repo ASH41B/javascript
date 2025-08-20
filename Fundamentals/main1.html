@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <head>
-<script src="/Fundamentals/main1.js"> //outputs data from main1 file//
-</script>
+
 <script>
 console.log("Connected from head");//outputs data on console//</script> 
 </head>
@@ -9,8 +8,10 @@ console.log("Connected from head");//outputs data on console//</script>
 <h1>This is demo of Alert and Document.write</h1>
 <button type="button" onclick="document.write('Hi')">Click me!</button>
 
-<p id="test"></p>
-<script>
-console.log("Connected from body"); //outputs data on console//</script> 
+    <p id="test"></p>
+    <script src="/Fundamentals/main1.js"> //outputs data from main1 file////note that the script tag has to be after the paragraph tag for innerhtml to work properly
+</script> 
+
+<script>console.log("Connected from body"); //outputs data on console//</script> 
 </body>
 </html>
